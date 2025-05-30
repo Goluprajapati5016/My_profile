@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Github } from "lucide-react";
@@ -29,7 +30,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Golu Prajapati</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A passionate <span className="text-primary font-semibold">Python Craftsman</span> with a love for creating elegant, efficient solutions
+            Python enthusiast with a passion for creating elegant, efficient solutions
             to complex problems. I specialize in building robust applications and
             leveraging data to drive insights.
           </p>
@@ -37,9 +38,9 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold">My Journey as a <span className="text-primary">Code Artisan</span></h3>
+            <h3 className="text-2xl font-bold">My Journey</h3>
             <p>
-              With over 5 years of experience as a <span className="font-semibold text-primary">Python Enthusiast</span>, I've worked across
+              With over 5 years of experience in Python development, I've worked across
               various domains including web development, data science, and automation.
               My approach combines technical expertise with a strong focus on delivering
               value through clean, maintainable code.
@@ -48,7 +49,7 @@ const About = () => {
               I'm constantly expanding my knowledge and exploring new technologies
               to solve challenging problems efficiently. Whether it's building web
               applications, analyzing data, or architecting scalable systems, I bring
-              a thoughtful and detail-oriented perspective as a <span className="font-semibold text-primary">Digital Solution Architect</span>.
+              a thoughtful and detail-oriented perspective.
             </p>
             <div className="pt-4">
               <Button variant="outline" className="mr-4" asChild>

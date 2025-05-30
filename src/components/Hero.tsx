@@ -26,12 +26,12 @@ profile = introduce_myself()`;
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             Hi, I'm <span className="text-primary">Golu Prajapati</span> <br />
-            <span className="text-primary">🐍 Python</span> Wizard <br />
-            & Code Architect
+            <span className="text-primary">Python</span> Developer <br />
+            & Problem Solver
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8">
-            I craft elegant digital solutions with Python, transforming complex 
-            challenges into beautiful, scalable applications.
+            I build robust applications and analyze complex data, 
+            turning challenges into elegant solutions.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button asChild size="lg">
