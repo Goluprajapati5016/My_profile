@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Twitter, Youtube } from "lucide-react";
 
 const Footer = () => {
@@ -14,7 +13,7 @@ const Footer = () => {
               <span className="syntax-function">golu_prajapati</span>():
             </h3>
             <p className="mt-2 text-sm text-muted-foreground max-w-md">
-              Python developer specializing in data science, web development, and
+              <span className="text-primary font-semibold">Python Code Artisan</span> specializing in data science, web development, and
               creating elegant solutions to complex problems.
             </p>
           </div>
@@ -61,7 +60,7 @@ const Footer = () => {
         
         <div className="border-t border-border/50 mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Golu Prajapati - Python Developer Portfolio. All rights reserved.
+            © {currentYear} Golu Prajapati - Python Code Wizard Portfolio. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground mt-2">
             Built with React & Tailwind CSS
