@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <h3 className="text-xl font-mono font-semibold">
               <span className="syntax-keyword">def</span>{" "}
-              <span className="syntax-function">developer</span>():
+              <span className="syntax-function">golu_prajapati</span>():
             </h3>
             <p className="mt-2 text-sm text-muted-foreground max-w-md">
               Python developer specializing in data science, web development, and
@@ -61,7 +61,7 @@ const Footer = () => {
         
         <div className="border-t border-border/50 mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Python Developer Portfolio. All rights reserved.
+            © {currentYear} Golu Prajapati - Python Developer Portfolio. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground mt-2">
             Built with React & Tailwind CSS

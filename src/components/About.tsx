@@ -27,7 +27,7 @@ const About = () => {
     <section id="about" className="py-20">
       <div className="container px-4">
         <div className="mb-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Golu Prajapati</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Python enthusiast with a passion for creating elegant, efficient solutions
@@ -58,7 +58,7 @@ const About = () => {
                 </a>
               </Button>
               <Button variant="outline" className="flex items-center gap-2" asChild>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/golu565453" target="_blank" rel="noopener noreferrer">
                   <Github className="h-4 w-4" />
                   GitHub Profile
                 </a>

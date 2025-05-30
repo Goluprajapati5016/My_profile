@@ -3,12 +3,13 @@ import { Button } from "@/components/ui/button";
 import CodeSnippet from "./CodeSnippet";
 
 const Hero = () => {
-  const pythonCode = `# Hello, World! I'm a Python Developer
+  const pythonCode = `# Hello, World! I'm Golu Prajapati - Python Developer
 def introduce_myself():
+    name = "Golu Prajapati"
     skills = ["Python", "Data Science", "Web Development", "Machine Learning"]
     experience = 5  # Years of coding
     
-    print("Hi there! I'm passionate about creating")
+    print(f"Hi there! I'm {name}, passionate about creating")
     print("innovative solutions with clean, efficient code.")
     
     return {
@@ -24,6 +25,7 @@ profile = introduce_myself()`;
       <div className="container px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            Hi, I'm <span className="text-primary">Golu Prajapati</span> <br />
             <span className="text-primary">Python</span> Developer <br />
             & Problem Solver
           </h1>
