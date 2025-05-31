@@ -25,31 +25,35 @@ const CodeSnippet = ({ code, className = '' }: CodeSnippetProps) => {
   // Apply syntax highlighting
   const formatCode = (codeString: string) => {
     // Simple Python syntax highlighting for the example
-    // In a real application, consider using a library like Prism.js or highlight.js
     return codeString
       .replace(
         /(["'])(?:(?=(\\?))\2.)*?\1/g, 
-        '<span class="syntax-string">$&</span>'
+        '<span class="text-green-400">$&</span>'
       )
       .replace(
         /(def|class|import|from|if|else|elif|for|while|return|True|False|None)/g, 
-        '<span class="syntax-keyword">$1</span>'
+        '<span class="text-purple-400 font-medium">$1</span>'
       )
       .replace(
         /([A-Za-z_][A-Za-z0-9_]*(?=\())/g, 
-        '<span class="syntax-function">$1</span>'
+        '<span class="text-blue-400">$1</span>'
       )
       .replace(
         /(#.*$)/gm, 
-        '<span class="syntax-comment">$1</span>'
+        '<span class="text-gray-400 italic">$1</span>'
       );
   };
   
   return (
-    <pre className={`font-mono bg-card p-4 rounded-lg text-sm md:text-base overflow-x-auto ${className}`}>
-      <code dangerouslySetInnerHTML={{ __html: formatCode(displayCode) }} />
-      <span className="inline-block w-2 h-5 bg-primary animate-pulse ml-0.5" />
-    </pre>
+    <div className={`w-full max-w-full overflow-hidden ${className}`}>
+      <pre className="font-mono bg-gray-900 p-3 sm:p-4 md:p-6 rounded-lg text-xs sm:text-sm md:text-base overflow-x-auto whitespace-pre-wrap break-words border border-gray-700">
+        <code 
+          className="block text-white leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: formatCode(displayCode) }} 
+        />
+        <span className="inline-block w-2 h-4 sm:h-5 bg-blue-500 animate-pulse ml-0.5" />
+      </pre>
+    </div>
   );
 };
 
