@@ -39,7 +39,7 @@ const Footer = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a 
-              href="https://twitter.com" 
+              href="https://x.com/goluprajap5016" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="Twitter"
