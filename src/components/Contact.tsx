@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -75,10 +76,10 @@ const Contact = () => {
               <div>
                 <h4 className="text-base sm:text-lg font-medium mb-2">Email</h4>
                 <a 
-                  href="mailto:goluprajapati565453@gmail.com" 
+                  href="mailto:gp1515151@gmail.com" 
                   className="text-primary hover:underline text-sm sm:text-base"
                 >
-                  goluprajapati565453@gmail.com
+                  gp1515151@gmail.com
                 </a>
               </div>
               
