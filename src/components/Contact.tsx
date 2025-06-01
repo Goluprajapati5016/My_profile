@@ -75,16 +75,16 @@ const Contact = () => {
               <div>
                 <h4 className="text-base sm:text-lg font-medium mb-2">Email</h4>
                 <a 
-                  href="mailto:gp1515151@gmail.com" 
+                  href="mailto:goluprajapati565453@gmail.com" 
                   className="text-primary hover:underline text-sm sm:text-base"
                 >
-                  gp1515151@gmail.com
+                  goluprajapati565453@gmail.com
                 </a>
               </div>
               
               <div>
                 <h4 className="text-base sm:text-lg font-medium mb-2">Location</h4>
-                <p className="text-sm sm:text-base">San Francisco, California</p>
+                <p className="text-sm sm:text-base">Rampur (Madhopatti) Kajgaon Jaunpur Uttar Pradesh</p>
               </div>
             </div>
             
