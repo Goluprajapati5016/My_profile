@@ -84,6 +84,16 @@ const Contact = () => {
               </div>
               
               <div>
+                <h4 className="text-base sm:text-lg font-medium mb-2">Mobile</h4>
+                <a 
+                  href="tel:+917275565453" 
+                  className="text-primary hover:underline text-sm sm:text-base"
+                >
+                  +91 7275565453
+                </a>
+              </div>
+              
+              <div>
                 <h4 className="text-base sm:text-lg font-medium mb-2">Location</h4>
                 <p className="text-sm sm:text-base">Rampur (Madhopatti) Kajgaon Jaunpur Uttar Pradesh</p>
               </div>
