@@ -20,7 +20,6 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -65,6 +64,10 @@ const Navbar = () => {
               </a>
             </Button>
           </div>
+          
+          <Button asChild>
+            <a href="#contact">Contact Me</a>
+          </Button>
         </div>
         
         {/* Mobile menu button */}
@@ -90,6 +93,11 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+              <li className="py-2 mt-2">
+                <Button className="w-full" asChild>
+                  <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact Me</a>
+                </Button>
+              </li>
               <li className="py-2 flex space-x-2">
                 <Button variant="outline" size="icon" asChild>
                   <a href="https://github.com/golu565453" target="_blank" rel="noopener noreferrer">
