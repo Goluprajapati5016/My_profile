@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Menu, X } from "lucide-react";
+import { Github, Linkedin, Menu, X, Instagram } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -59,6 +59,11 @@ const Navbar = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <a href="https://www.instagram.com/mr._kuhu5016/?__pwa=1" target="_blank" rel="noopener noreferrer">
+                <Instagram className="h-5 w-5" />
+              </a>
+            </Button>
           </div>
           
           <Button asChild>
@@ -103,6 +108,11 @@ const Navbar = () => {
                 <Button variant="outline" size="icon" asChild>
                   <a href="https://www.linkedin.com/in/goluprajapti5016/" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-5 w-5" />
+                  </a>
+                </Button>
+                <Button variant="outline" size="icon" asChild>
+                  <a href="https://www.instagram.com/mr._kuhu5016/?__pwa=1" target="_blank" rel="noopener noreferrer">
+                    <Instagram className="h-5 w-5" />
                   </a>
                 </Button>
               </li>
