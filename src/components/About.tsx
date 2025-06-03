@@ -53,7 +53,7 @@ const About = () => {
             </p>
             <div className="pt-4 flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button variant="outline" className="w-full sm:w-auto" asChild>
-                <a href="/path-to-resume.pdf" download>
+                <a href="/lovable-uploads/020c746f-83e2-439e-a66e-9797ea43126e.png" download="Golu_Prajapati_Resume.png">
                   Download Resume
                 </a>
               </Button>
