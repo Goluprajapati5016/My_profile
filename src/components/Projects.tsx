@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -106,7 +105,7 @@ const Projects = () => {
         
         <div className="mt-8 lg:mt-12 text-center">
           <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
-            <a href="https://github.com/golu565453" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/golu565453?tab=repositories" target="_blank" rel="noopener noreferrer">
               View All Projects on GitHub
             </a>
           </Button>
