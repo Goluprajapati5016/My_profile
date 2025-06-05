@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Github, Linkedin, Twitter, Youtube, Mail } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -26,11 +26,26 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
+    // Create mailto link with form data
+    const subject = encodeURIComponent(formData.subject || "Contact from Portfolio");
+    const body = encodeURIComponent(`
+Name: ${formData.name}
+Email: ${formData.email}
+Subject: ${formData.subject}
+
+Message:
+${formData.message}
+    `);
+    
+    const mailtoLink = `mailto:gp1515151@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Open default email client
+    window.location.href = mailtoLink;
+    
     setTimeout(() => {
       toast({
-        title: "Message Sent!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
+        title: "Email Client Opened!",
+        description: "Your default email application should open with the message pre-filled. Please send the email from there.",
       });
       
       setFormData({
@@ -41,7 +56,7 @@ const Contact = () => {
       });
       
       setIsSubmitting(false);
-    }, 1500);
+    }, 1000);
   };
 
   const socialLinks = [
@@ -75,12 +90,15 @@ const Contact = () => {
             <div className="space-y-4">
               <div>
                 <h4 className="text-base sm:text-lg font-medium mb-2">Email</h4>
-                <a 
-                  href="mailto:gp1515151@gmail.com" 
-                  className="text-primary hover:underline text-sm sm:text-base"
-                >
-                  gp1515151@gmail.com
-                </a>
+                <div className="flex items-center gap-2">
+                  <Mail className="h-4 w-4 text-primary" />
+                  <a 
+                    href="mailto:gp1515151@gmail.com" 
+                    className="text-primary hover:underline text-sm sm:text-base"
+                  >
+                    gp1515151@gmail.com
+                  </a>
+                </div>
               </div>
               
               <div>
@@ -120,6 +138,13 @@ const Contact = () => {
           </div>
           
           <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-6 bg-card/60 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-border/50">
+            <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-950 rounded-lg border border-blue-200 dark:border-blue-800">
+              <p className="text-sm text-blue-700 dark:text-blue-300">
+                <Mail className="inline h-4 w-4 mr-1" />
+                This form will open your email client with the message pre-filled to send to: gp1515151@gmail.com
+              </p>
+            </div>
+            
             <div className="space-y-4">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
@@ -178,7 +203,7 @@ const Contact = () => {
             </div>
             
             <Button type="submit" className="w-full text-sm sm:text-base" disabled={isSubmitting}>
-              {isSubmitting ? "Sending..." : "Send Message"}
+              {isSubmitting ? "Opening Email Client..." : "Send Message"}
             </Button>
           </form>
         </div>
