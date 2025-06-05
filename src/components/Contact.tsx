@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,41 +21,43 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Create mailto link with form data
-    const subject = encodeURIComponent(formData.subject || "Contact from Portfolio");
-    const body = encodeURIComponent(`
-Name: ${formData.name}
-Email: ${formData.email}
-Subject: ${formData.subject}
+    try {
+      const response = await fetch("https://formspree.io/f/xblylplb", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-Message:
-${formData.message}
-    `);
-    
-    const mailtoLink = `mailto:gp1515151@gmail.com?subject=${subject}&body=${body}`;
-    
-    // Open default email client
-    window.location.href = mailtoLink;
-    
-    setTimeout(() => {
+      if (response.ok) {
+        toast({
+          title: "Message Sent!",
+          description: "Thanks for reaching out. I'll get back to you soon.",
+        });
+        
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
       toast({
-        title: "Email Client Opened!",
-        description: "Your default email application should open with the message pre-filled. Please send the email from there.",
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
       });
-      
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-      
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const socialLinks = [
@@ -137,11 +138,11 @@ ${formData.message}
             </div>
           </div>
           
-          <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-6 bg-card/60 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-border/50">
+          <form action="https://formspree.io/f/xblylplb" method="POST" onSubmit={handleSubmit} className="space-y-4 lg:space-y-6 bg-card/60 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-border/50">
             <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-950 rounded-lg border border-blue-200 dark:border-blue-800">
               <p className="text-sm text-blue-700 dark:text-blue-300">
                 <Mail className="inline h-4 w-4 mr-1" />
-                This form will open your email client with the message pre-filled to send to: gp1515151@gmail.com
+                Send me a message directly through this form!
               </p>
             </div>
             
@@ -203,7 +204,7 @@ ${formData.message}
             </div>
             
             <Button type="submit" className="w-full text-sm sm:text-base" disabled={isSubmitting}>
-              {isSubmitting ? "Opening Email Client..." : "Send Message"}
+              {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
           </form>
         </div>
