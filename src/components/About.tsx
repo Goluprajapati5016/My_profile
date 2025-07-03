@@ -67,6 +67,16 @@ const About = () => {
                   <p className="text-muted-foreground text-xs sm:text-sm">Jaunpur, Uttar Pradesh, India</p>
                   <p className="text-muted-foreground text-xs sm:text-sm">Aug. 2021 - May 2024</p>
                 </div>
+                <div className="border-l-2 border-primary pl-4">
+                  <h5 className="font-semibold text-sm sm:text-base">O Level (Foundation Course in Computer Applications)</h5>
+                  <p className="text-primary text-sm">National Institute of Electronics & Information Technology (NIELIT)</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">Completed on 7 May 2024</p>
+                </div>
+                <div className="border-l-2 border-primary pl-4">
+                  <h5 className="font-semibold text-sm sm:text-base">Course on Computer Concepts (CCC)</h5>
+                  <p className="text-primary text-sm">National Institute of Electronics & Information Technology (NIELIT)</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">Completed on 22 Nov 2021</p>
+                </div>
               </div>
             </div>
 
