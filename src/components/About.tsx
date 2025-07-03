@@ -38,7 +38,7 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           <div className="space-y-4 lg:space-y-6">
-            <h3 className="text-xl sm:text-2xl font-bold">My Journey</h3>
+            <h3 className="text-xl sm:text-2xl font-bold">My Digital Journey</h3>
             <p className="text-sm sm:text-base">
               Hi, I'm Golu — a passionate coder and tech enthusiast on a journey to turn ideas into smart digital solutions. I've completed certifications like O Level, CCC, MDCA, and Tally ERP 9 with GST, and I've gained practical experience in programming languages including C, C++, HTML, CSS, JavaScript, and Python.
             </p>
