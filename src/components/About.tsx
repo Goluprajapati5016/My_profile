@@ -40,16 +40,10 @@ const About = () => {
           <div className="space-y-4 lg:space-y-6">
             <h3 className="text-xl sm:text-2xl font-bold">My Journey</h3>
             <p className="text-sm sm:text-base">
-              With over 5 years of experience in Python development, I've worked across
-              various domains including web development, data science, and automation.
-              My approach combines technical expertise with a strong focus on delivering
-              value through clean, maintainable code.
+              Hi, I'm Golu — a passionate coder and tech enthusiast on a journey to turn ideas into smart digital solutions. I've completed certifications like O Level, CCC, MDCA, and Tally ERP 9 with GST, and I've gained practical experience in programming languages including C, C++, HTML, CSS, JavaScript, and Python.
             </p>
             <p className="text-sm sm:text-base">
-              I'm constantly expanding my knowledge and exploring new technologies
-              to solve challenging problems efficiently. Whether it's building web
-              applications, analyzing data, or architecting scalable systems, I bring
-              a thoughtful and detail-oriented perspective.
+              I love building user-friendly applications, automating tasks, and diving deep into both frontend and backend technologies. Whether it's designing a responsive web page or managing data with MySQL, I'm always exploring new ways to learn and grow.
             </p>
 
             <div className="space-y-4">
