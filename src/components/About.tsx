@@ -51,6 +51,25 @@ const About = () => {
               applications, analyzing data, or architecting scalable systems, I bring
               a thoughtful and detail-oriented perspective.
             </p>
+
+            <div className="space-y-4">
+              <h4 className="text-lg sm:text-xl font-bold">Education</h4>
+              <div className="space-y-3">
+                <div className="border-l-2 border-primary pl-4">
+                  <h5 className="font-semibold text-sm sm:text-base">MCA (Master of Computer Applications)</h5>
+                  <p className="text-primary text-sm">Veer Bahadur Singh Purvanchal University</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">Jaunpur, Uttar Pradesh, India</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">Aug. 2024 - May 20xx</p>
+                </div>
+                <div className="border-l-2 border-primary pl-4">
+                  <h5 className="font-semibold text-sm sm:text-base">BCA (Bachelor of Computer Applications)</h5>
+                  <p className="text-primary text-sm">Veer Bahadur Singh Purvanchal University</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">Jaunpur, Uttar Pradesh, India</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">Aug. 2021 - May 2024</p>
+                </div>
+              </div>
+            </div>
+
             <div className="pt-4 flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button variant="outline" className="w-full sm:w-auto" asChild>
                 <a href="/lovable-uploads/020c746f-83e2-439e-a66e-9797ea43126e.png" download="Golu_Prajapati_Resume.png">
