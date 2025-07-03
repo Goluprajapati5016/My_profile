@@ -7,7 +7,7 @@ const About = () => {
   const skills = [
     {
       category: "Programming Languages",
-      items: ["Python", "JavaScript", "SQL", "Rust", "C++"]
+      items: ["Python", "JavaScript", "SQL", "C, C++"]
     },
     {
       category: "Frameworks & Tools",
@@ -15,11 +15,11 @@ const About = () => {
     },
     {
       category: "Databases",
-      items: ["PostgreSQL", "MongoDB", "SQLite", "Redis", "DynamoDB"]
+      items: ["PostgreSQL", "MongoDB", "SQLite", "DynamoDB"]
     },
     {
       category: "Cloud & DevOps",
-      items: ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform"]
+      items: ["AWS", "Docker", "CI/CD", "Terraform"]
     }
   ];
 
