@@ -29,7 +29,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/89d93173-49c5-4911-9016-cfe86e90a9fb.png" 
             alt="Golu Prajapati"
-            className="w-full max-w-md mx-auto rounded-lg shadow-lg"
+            className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
           />
         </div>
       </div>
