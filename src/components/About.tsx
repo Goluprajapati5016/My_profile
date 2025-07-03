@@ -77,6 +77,21 @@ const About = () => {
                   <p className="text-primary text-sm">National Institute of Electronics & Information Technology (NIELIT)</p>
                   <p className="text-muted-foreground text-xs sm:text-sm">Completed on 22 Nov 2021</p>
                 </div>
+                <div className="border-l-2 border-primary pl-4">
+                  <h5 className="font-semibold text-sm sm:text-base">Tally ERP 9 with GST</h5>
+                  <p className="text-primary text-sm">Net-Tech Academy of Computer Technology</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">Completed on 29 Feb 2020</p>
+                </div>
+                <div className="border-l-2 border-primary pl-4">
+                  <h5 className="font-semibold text-sm sm:text-base">MDCA (Modern Diploma in Computer Applications)</h5>
+                  <p className="text-primary text-sm">Sunrise Institute of Technology & Management</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">Completed on 10 Oct 2019</p>
+                </div>
+                <div className="border-l-2 border-primary pl-4">
+                  <h5 className="font-semibold text-sm sm:text-base">Programming Skills (C & C++, HTML & CSS, JavaScript, Python)</h5>
+                  <p className="text-primary text-sm">Coding Seekho Platform</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">Completed in Mar 2024</p>
+                </div>
               </div>
             </div>
 
