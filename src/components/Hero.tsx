@@ -1,25 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import CodeSnippet from "./CodeSnippet";
 
 const Hero = () => {
-  const pythonCode = `# Hello, World! I'm Golu Prajapati - Python Developer
-def introduce_myself():
-    name = "Golu Prajapati"
-    skills = ["Python", "Data Science", "Web Development", "Machine Learning"]
-    experience = 5  # Years of coding
-    
-    print(f"Hi there! I'm {name}, passionate about creating")
-    print("innovative solutions with clean, efficient code.")
-    
-    return {
-        "open_to_opportunities": True,
-        "loves_to_collaborate": True
-    }
-
-# Let's connect and build something amazing together!
-profile = introduce_myself()`;
-
   return (
     <section className="min-h-screen flex flex-col justify-center pt-16 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto py-8 sm:py-12 lg:py-16 grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
@@ -44,7 +26,11 @@ profile = introduce_myself()`;
         </div>
         
         <div className="animate-fade-in animate-delay-200 order-1 lg:order-2">
-          <CodeSnippet code={pythonCode} className="shadow-lg text-xs sm:text-sm" />
+          <img 
+            src="/lovable-uploads/89d93173-49c5-4911-9016-cfe86e90a9fb.png" 
+            alt="Golu Prajapati"
+            className="w-full max-w-md mx-auto rounded-lg shadow-lg"
+          />
         </div>
       </div>
       
