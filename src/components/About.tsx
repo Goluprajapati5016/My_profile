@@ -46,8 +46,8 @@ const About = () => {
               I love building user-friendly applications, automating tasks, and diving deep into both frontend and backend technologies. Whether it's designing a responsive web page or managing data with MySQL, I'm always exploring new ways to learn and grow.
             </p>
 
-            <div className="space-y-4">
-              <h4 className="text-lg sm:text-xl font-bold">Education</h4>
+            <div className="space-y-4 lg:space-y-6">
+              <h3 className="text-xl sm:text-2xl font-bold">My Education</h3>
               <div className="space-y-3">
                 <div className="border-l-2 border-primary pl-4">
                   <h5 className="font-semibold text-sm sm:text-base">MCA (Master of Computer Applications)</h5>
