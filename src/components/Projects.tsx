@@ -38,11 +38,11 @@ const Projects = () => {
       demoLink: "#",
     },
     {
-      title: "CLI Productivity Tools",
-      description: "Suite of command-line tools to enhance developer productivity. Includes code generation, project scaffolding, and configuration management.",
-      tags: ["Python", "Click", "Shell", "Git Integration"],
-      image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1974&auto=format&fit=crop",
-      githubLink: "https://github.com/golu565453",
+      title: "Quiz Game Application",
+      description: "Interactive quiz game system with timer functionality, scoring system, and multiple choice questions. Features a clean user interface with NET-TECH Academy branding and comprehensive question management.",
+      tags: ["Python", "Tkinter", "GUI", "Timer", "Quiz System", "Educational"],
+      image: "/lovable-uploads/195624ac-9752-41e1-9999-936ab769d9c5.png",
+      githubLink: "https://github.com/golu565453/quiz_game",
     },
   ];
 
