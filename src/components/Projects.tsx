@@ -23,11 +23,11 @@ const Projects = () => {
       demoLink: "#",
     },
     {
-      title: "Machine Learning API",
-      description: "Scalable API service for ML model inference. Built with FastAPI and deployed on AWS Lambda for high availability.",
-      tags: ["Python", "FastAPI", "AWS", "Machine Learning", "Docker"],
-      image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop",
-      githubLink: "https://github.com/golu565453",
+      title: "Library Management System",
+      description: "Complete library management system with member registration, book tracking, and automated fine calculations. Built with modern UI/UX design.",
+      tags: ["Python", "Tkinter", "Database", "GUI", "Management System"],
+      image: "/lovable-uploads/86e3ba4e-6eba-450e-850a-9f2f442f65f7.png",
+      githubLink: "https://github.com/golu565453/library_management_system",
     },
     {
       title: "Automation Framework",
