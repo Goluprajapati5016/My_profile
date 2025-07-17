@@ -24,8 +24,8 @@ const Projects = () => {
     },
     {
       title: "Library Management System",
-      description: "Complete library management system with member registration, book tracking, and automated fine calculations. Built with modern UI/UX design.",
-      tags: ["Python", "Tkinter", "Database", "GUI", "Management System"],
+      description: "This Library Management System is a robust and user-friendly solution developed using Python and MySQL. It simplifies the process of managing books, tracking user activities, and automating library operations—ideal for schools, colleges, and personal collections.",
+      tags: ["Python", "MySQL", "Tkinter", "Database", "GUI", "Management System"],
       image: "/lovable-uploads/86e3ba4e-6eba-450e-850a-9f2f442f65f7.png",
       githubLink: "https://github.com/golu565453/library_management_system",
     },
