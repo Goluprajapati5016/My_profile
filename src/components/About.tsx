@@ -1,28 +1,87 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Github } from "lucide-react";
+import { Github, Award, Trophy, Star, Code, Database, Cloud, Wrench } from "lucide-react";
 
 const About = () => {
   const skills = [
     {
       category: "Programming Languages",
-      items: ["Python", "JavaScript", "SQL", "C, C++"]
+      items: [
+        { name: "Python", icon: "🐍" },
+        { name: "JavaScript", icon: "🟨" },
+        { name: "SQL", icon: "🗃️" },
+        { name: "C, C++", icon: "⚡" }
+      ]
     },
     {
       category: "Frameworks & Tools",
-      items: ["Django", "Flask", "FastAPI", "React", "Pandas", "Numpy"]
+      items: [
+        { name: "Django", icon: "🎯" },
+        { name: "Flask", icon: "🌶️" },
+        { name: "FastAPI", icon: "⚡" },
+        { name: "React", icon: "⚛️" },
+        { name: "Pandas", icon: "🐼" },
+        { name: "Numpy", icon: "🔢" }
+      ]
     },
     {
       category: "Databases",
-      items: ["PostgreSQL", "MongoDB", "SQLite", "DynamoDB"]
+      items: [
+        { name: "PostgreSQL", icon: "🐘" },
+        { name: "MongoDB", icon: "🍃" },
+        { name: "SQLite", icon: "💾" },
+        { name: "DynamoDB", icon: "⚡" }
+      ]
     },
     {
       category: "Cloud & DevOps",
-      items: ["AWS", "Docker", "CI/CD", "Terraform"]
+      items: [
+        { name: "AWS", icon: "☁️" },
+        { name: "Docker", icon: "🐳" },
+        { name: "CI/CD", icon: "🔄" },
+        { name: "Terraform", icon: "🏗️" }
+      ]
     }
   ];
 
+  const achievements = [
+    {
+      title: "O Level Certification",
+      description: "Foundation Course in Computer Applications from NIELIT",
+      date: "May 2024",
+      icon: Award,
+      color: "text-blue-500"
+    },
+    {
+      title: "CCC Certification",
+      description: "Course on Computer Concepts from NIELIT",
+      date: "Nov 2021",
+      icon: Trophy,
+      color: "text-green-500"
+    },
+    {
+      title: "Programming Excellence",
+      description: "Completed C, C++, HTML, CSS, JavaScript, Python from Coding Seekho",
+      date: "Mar 2024",
+      icon: Code,
+      color: "text-purple-500"
+    },
+    {
+      title: "Tally ERP 9 with GST",
+      description: "Professional certification in accounting software",
+      date: "Feb 2020",
+      icon: Star,
+      color: "text-yellow-500"
+    },
+    {
+      title: "MDCA Diploma",
+      description: "Modern Diploma in Computer Applications",
+      date: "Oct 2019",
+      icon: Award,
+      color: "text-indigo-500"
+    }
+  ];
   return (
     <section id="about" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
@@ -36,6 +95,41 @@ const About = () => {
           </p>
         </div>
 
+        {/* Achievements Section */}
+        <div id="achievements" className="mt-16 lg:mt-20 animate-fade-in animate-delay-400">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl font-bold mb-4 hover:text-primary transition-colors duration-300 hover:scale-105 inline-block">My Achievements</h3>
+            <div className="w-20 h-1 bg-primary mx-auto mb-6 hover:w-32 transition-all duration-500 hover:animate-glow"></div>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base hover:text-foreground transition-colors duration-300">
+              Certifications and milestones that showcase my commitment to continuous learning and professional growth.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {achievements.map((achievement, index) => (
+              <Card key={index} className="bg-card/50 backdrop-blur-sm border-primary/20 hover:bg-card/80 hover:border-primary/40 hover:scale-105 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 group">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className={`p-3 rounded-full bg-muted/50 group-hover:bg-primary/20 transition-all duration-300 group-hover:scale-110`}>
+                      <achievement.icon className={`h-6 w-6 ${achievement.color} group-hover:animate-bounce`} />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
+                        {achievement.title}
+                      </h4>
+                      <p className="text-sm text-muted-foreground mb-2 group-hover:text-foreground transition-colors duration-300">
+                        {achievement.description}
+                      </p>
+                      <p className="text-xs text-primary font-medium group-hover:animate-pulse">
+                        {achievement.date}
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           <div className="space-y-4 lg:space-y-6 animate-slide-in-left animate-delay-200">
             <h3 className="text-xl sm:text-2xl font-bold hover:text-primary transition-colors duration-300 hover:scale-105 inline-block">My Digital Journey</h3>
@@ -115,9 +209,9 @@ const About = () => {
                     </h4>
                     <ul className="space-y-2">
                       {skillGroup.items.map((skill, idx) => (
-                        <li key={idx} className="flex items-center gap-2 text-sm sm:text-base hover:text-primary transition-colors duration-300 group/item">
-                          <span className="w-2 h-2 bg-primary rounded-full flex-shrink-0 group-hover/item:animate-pulse group-hover/item:scale-150 transition-all duration-300"></span>
-                          {skill}
+                        <li key={idx} className="flex items-center gap-3 text-sm sm:text-base hover:text-primary transition-colors duration-300 group/item hover:bg-card/30 hover:p-2 hover:rounded-lg">
+                          <span className="text-lg group-hover/item:animate-bounce group-hover/item:scale-125 transition-all duration-300">{skill.icon}</span>
+                          <span className="group-hover/item:font-medium transition-all duration-300">{skill.name}</span>
                         </li>
                       ))}
                     </ul>

@@ -12,6 +12,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <About />
+      {/* About section now includes Skills and Achievements */}
       <Projects />
       <Contact />
       <Footer />
