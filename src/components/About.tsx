@@ -131,7 +131,7 @@ const About = () => {
           </div>
         </div>
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-          <div className="space-y-4 lg:space-y-6 animate-slide-in-left animate-delay-200">
+          <div className="lg:col-span-2 space-y-4 lg:space-y-6 animate-slide-in-left animate-delay-200 text-center max-w-4xl mx-auto">
             <h3 className="text-xl sm:text-2xl font-bold hover:text-primary transition-colors duration-300 hover:scale-105 inline-block">My Digital Journey</h3>
             <p className="text-sm sm:text-base hover:text-foreground transition-colors duration-300">
               Hi, I'm Golu — a passionate coder and tech enthusiast on a journey to turn ideas into smart digital solutions. I've completed certifications like O Level, CCC, MDCA, and Tally ERP 9 with GST, and I've gained practical experience in programming languages including C, C++, HTML, CSS, JavaScript, and Python.
@@ -139,7 +139,11 @@ const About = () => {
             <p className="text-sm sm:text-base hover:text-foreground transition-colors duration-300">
               I love building user-friendly applications, automating tasks, and diving deep into both frontend and backend technologies. Whether it's designing a responsive web page or managing data with MySQL, I'm always exploring new ways to learn and grow.
             </p>
+          </div>
+        </div>
 
+        <div className="mt-12 lg:mt-16 grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+          <div className="space-y-4 lg:space-y-6 animate-slide-in-left animate-delay-300">
             <div className="space-y-4 lg:space-y-6">
               <h3 className="text-xl sm:text-2xl font-bold hover:text-primary transition-colors duration-300 hover:scale-105 inline-block">My Education</h3>
               <div className="space-y-3">
@@ -183,7 +187,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="pt-4 flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-in animate-delay-400">
+            <div className="pt-4 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-fade-in animate-delay-400">
               <Button variant="outline" className="w-full sm:w-auto hover:scale-105 hover:shadow-lg transition-all duration-300 hover:bg-primary hover:text-primary-foreground" asChild>
                 <a href="/lovable-uploads/020c746f-83e2-439e-a66e-9797ea43126e.png" download="Golu_Prajapati_Resume.png">
                   Download Resume
@@ -198,7 +202,7 @@ const About = () => {
             </div>
           </div>
 
-          <div id="skills" className="animate-slide-in-right animate-delay-300">
+          <div id="skills" className="animate-slide-in-right animate-delay-400">
             <h3 className="text-xl sm:text-2xl font-bold mb-6 hover:text-primary transition-colors duration-300 hover:scale-105 inline-block">My Skills</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {skills.map((skillGroup, index) => (
