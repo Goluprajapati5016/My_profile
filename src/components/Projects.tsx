@@ -15,12 +15,12 @@ interface Project {
 const Projects = () => {
   const projects: Project[] = [
     {
-      title: "Data Analysis Dashboard",
-      description: "Interactive dashboard built with Python, Flask, and React. Features real-time data visualization and advanced filtering capabilities.",
-      tags: ["Python", "Flask", "React", "D3.js", "Pandas"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-      githubLink: "https://github.com/golu565453",
-      demoLink: "#",
+      title: "HealthTracker - Wellness Dashboard",
+      description: "Comprehensive health tracking application with real-time monitoring of weight, exercise, sleep, and blood pressure. Features interactive charts, progress tracking, and personalized health insights.",
+      tags: ["React", "JavaScript", "Chart.js", "CSS3", "Responsive Design", "Health Analytics"],
+      image: "/hh.png",
+      githubLink: "https://github.com/Goluprajapati5016/HealthTracker",
+      demoLink: "https://health-tracker-dusky.vercel.app/",
     },
     {
       title: "Library Management System",
