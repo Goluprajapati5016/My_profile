@@ -189,12 +189,12 @@ const About = () => {
 
             <div className="pt-4 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-fade-in animate-delay-400">
               <Button variant="outline" className="w-full sm:w-auto hover:scale-105 hover:shadow-lg transition-all duration-300 hover:bg-primary hover:text-primary-foreground" asChild>
-                <a href="/lovable-uploads/020c746f-83e2-439e-a66e-9797ea43126e.png" download="Golu_Prajapati_Resume.png">
+                <a href="/golu_resume.pdf" download="Golu_Prajapati_Resume.pdf">
                   Download Resume
                 </a>
               </Button>
               <Button variant="outline" className="flex items-center gap-2 w-full sm:w-auto hover:scale-105 hover:shadow-lg transition-all duration-300 hover:bg-primary hover:text-primary-foreground group" asChild>
-                <a href="https://github.com/golu565453" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Goluprajapati5016" target="_blank" rel="noopener noreferrer">
                   <Github className="h-4 w-4 group-hover:animate-bounce" />
                   GitHub Profile
                 </a>

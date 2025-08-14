@@ -30,12 +30,12 @@ const Projects = () => {
       githubLink: "https://github.com/golu565453/library_management_system",
     },
     {
-      title: "Automation Framework",
-      description: "Modular automation framework for streamlining data processing pipelines. Reduced processing time by 70%.",
-      tags: ["Python", "Apache Airflow", "Postgres", "Celery"],
-      image: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1931&auto=format&fit=crop",
-      githubLink: "https://github.com/golu565453",
-      demoLink: "#",
+      title: "Blog Generator - AI Content Creator",
+      description: "Intelligent blog content generation platform with AI-powered writing assistance. Features topic generation, tone selection, keyword optimization, and automated content creation for bloggers and content creators.",
+      tags: ["React", "JavaScript", "AI Integration", "Content Generation", "Blog Platform", "SEO Optimization"],
+      image: "/blog.png",
+      githubLink: "https://github.com/Goluprajapati5016",
+      demoLink: "https://blog-theta-olive.vercel.app/",
     },
     {
       title: "Quiz Game Application",
